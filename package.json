@@ -1,0 +1,25 @@
+{
+  "name": "aoc-2021",
+  "version": "1.0.0",
+  "description": "Advent of code 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "log": "node utils/log_answers.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solodov-dev/aoc-2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solodov-dev/aoc-2021/issues"
+  },
+  "homepage": "https://github.com/solodov-dev/aoc-2021#readme",
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "jest": "^27.4.5"
+  }
+}

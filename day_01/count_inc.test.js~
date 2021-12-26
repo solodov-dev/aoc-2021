@@ -1,0 +1,5 @@
+import countInc from './countInc';
+
+describe('Count increments', () => {
+    console.log('true');
+})
