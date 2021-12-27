@@ -1,0 +1,20 @@
+module.exports = {
+    horizontal: 0,
+    depth: 0,
+    sail: (input) => {
+	input.forEach(line => {
+	    const [command, unit] = line.split(' ');
+	    switch (command) {
+	     case 'forward':
+		this.horizontal++;
+		break;
+	    case 'down':
+		this.depth++;
+		break;
+	    case 'up':
+		this.depth--;
+		break;
+	    }
+	}
+    }
+}

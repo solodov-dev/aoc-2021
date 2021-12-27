@@ -1,0 +1,14 @@
+module.exports = (input) => {
+    let triplets = [];
+
+    for (let i = 0; i < input.length; i++) {
+	if (input.length - i >= 3) {
+	    if (i % 3 === 1) {
+		triplets.push(input[i]);
+	    } else {
+		triplets[triplets.length - 1] = triplets[triplets.length - 1] + input[i];
+	    }
+	}
+    }
+    return triplets;
+}

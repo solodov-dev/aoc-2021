@@ -1,0 +1,20 @@
+const sub = require('./sub.js');
+
+sub.aim = 0;
+sub.sail = function(input) {
+    for (const line of input) {
+	const [command, unit] = line.split(' ');
+	const unit = Number(unit);
+
+	switch(command) {
+	case "forward":
+	    this.horizontal += unit;
+	    this.depth += this.aim * unit;
+	    break;
+	case "down":
+	    this.aim += unit;
+	    break;
+	case "up":
+	    this.aim -= unit;
+	    break;
+}
