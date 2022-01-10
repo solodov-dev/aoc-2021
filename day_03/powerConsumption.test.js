@@ -26,5 +26,5 @@ test('Power consumption', () => {
 })
 
 test('Power consumption', () => {
-    expect(epsylon(testInput)).toBe(198)
+    expect(powerConsumption(testInput)).toBe(198)
 })

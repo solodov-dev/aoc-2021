@@ -1,8 +1,0 @@
-import { countInc } from './count_inc.js';
-
-export default [
-  {
-    title: 'Increments:',
-    result: (input) => countInc(input),
-  },
-];

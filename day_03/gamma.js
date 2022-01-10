@@ -1,7 +1,8 @@
 module.exports = (input) => {
-    const arr = new Array(5).fill(0); 
+    const len = input[0].length;
+    const arr = new Array(len).fill(0); 
     for (const line of input) {
-	for (let i = 0; i < 5; i++) {
+	for (let i = 0; i < len; i++) {
 	    line[i] === '1' ? arr[i]++ : arr[i]--;
 	}
     }
