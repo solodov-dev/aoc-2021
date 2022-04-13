@@ -1,5 +1,5 @@
-const sub = require('./sub.js');
-const sub2 = require('./sub2.js');
+import sub from './sub.js';
+import sub2 from './sub2.js';
 
 const testInput = ['forward 5', 'down 5', 'forward 8', 'up 3', 'down 8', 'forward 2'];
     

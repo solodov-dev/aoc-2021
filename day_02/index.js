@@ -1,7 +1,7 @@
-const sub = require('./sub.js');
-const sub2 = require('./sub2.js');
+import sub from './sub.js';
+import sub2 from './sub2.js';
 
-exports.default = [
+const day2 = [
   {
     title: 'Navigate',
     result: (input) => sub.sail(input)
@@ -12,3 +12,4 @@ exports.default = [
   },
 ];
 
+export default day2;

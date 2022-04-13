@@ -1,14 +1,15 @@
-const countInc = require('./count_inc.js');
-const triplets = require('./triplets.js');
+import countInc from './count_inc.js';
+import triplets from './triplets.js';
 
-exports.default = [
-  {
-    title: 'Increments',
-    result: (input) => countInc(input),
-  },
-  {
-    title: 'Increments by triplet window',
-    result: (input) => countInc(triplets(input)),
-  },
+const day_01 = [
+    {
+        title: 'Increments',
+        result: (input) => countInc(input),
+    },
+    {
+        title: 'Increments by triplet window',
+        result: (input) => countInc(triplets(input)),
+    },
 ];
+export default day_01;
 

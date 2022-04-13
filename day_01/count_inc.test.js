@@ -1,5 +1,5 @@
-const countInc = require('./count_inc.js');
-const triplets = require('./triplets.js');
+import countInc from './count_inc.js';
+import triplets from './triplets.js';
 
 const data = [199, 200, 208, 210, 200, 207, 240, 269, 260, 263];
 

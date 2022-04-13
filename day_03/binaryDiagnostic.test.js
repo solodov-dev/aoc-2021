@@ -1,6 +1,7 @@
-const gamma = require('./gamma.js');
-const epsylon = require('./epsylon.js');
-const powerConsumption = require('./powerConsumption.js');
+import gamma from './gamma.js';
+import epsylon from './epsylon.js';
+import powerConsumption from './powerConsumption.js';
+import lifeSupportRating from './lifeSupportRating';
 
 const testInput = [
     '00100',
@@ -22,9 +23,13 @@ test('Most common bit', () => {
 })
 
 test('Power consumption', () => {
-    expect(epsylon(gamma(testInput))).toBe('01001');
+    expect(epsylon(testInput)).toBe('01001');
 })
 
 test('Power consumption', () => {
     expect(powerConsumption(testInput)).toBe(198)
+})
+
+test('Life support rating', () => {
+  expect(lifeSupportRating(testInput)).toBe(230);
 })

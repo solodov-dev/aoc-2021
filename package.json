@@ -1,11 +1,13 @@
 {
   "name": "aoc-2021",
   "version": "1.0.0",
+  "type": "module",
   "description": "Advent of code 2021",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "log": "node utils/log_answers.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
+    "log": "node utils/log_answers.js",
+    "generate": "node utils/generate_day.js"
   },
   "repository": {
     "type": "git",

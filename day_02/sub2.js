@@ -1,4 +1,4 @@
-const sub = require('./sub.js');
+import sub from './sub.js';
 
 const sub2 = Object.create(sub);
 
@@ -19,4 +19,4 @@ sub2.forward = function(unit) {
     this.depth += this.aim * unit;
 };
 
-module.exports = sub2;
+export default sub2;

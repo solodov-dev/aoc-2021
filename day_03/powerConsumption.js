@@ -1,9 +1,10 @@
-const gamma = require('./gamma.js');
-const epsylon = require('./epsylon.js');
+import gamma from './gamma.js';
+import epsylon from './epsylon.js';
+import toDecimal from './toDecimal.js';
 
-module.exports = (input) => {
-    const g = parseInt(gamma(input), 2);
-    const e = parseInt(epsylon(gamma(input)), 2);
+export default (input) => {
+    const g = toDecimal(gamma(input));
+    const e = toDecimal(epsylon(input));
     return g * e;
 }
 
